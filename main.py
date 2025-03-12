@@ -33,6 +33,7 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 EMAIL_SENDER_PASSWORD = os.getenv('EMAIL_SENDER_PASSWORD')
 ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 3600
 
 class ClientBase(BaseModel):
     firstname: str
@@ -122,8 +123,6 @@ def get_db():
     finally:
         db.close()
 
-db_dependency = Annotated[Session, Depends(get_db)]
-
 # TODO: internal api for create, get attorney
 # TODO: Fix token expire limitation by refreshing token
 
@@ -208,6 +207,14 @@ async def update_client_state(client_id: str, clientStateUpdate: ClientStateUpda
         return {"message": "Client state updated"}
     else:
         raise HTTPException(status_code=404, detail='client not found')
+
+@app.get("/clients", status_code=status.HTTP_200_OK)
+async def fetch_all_clients(db: db_dependency):
+    # TODO: guard with auth - maybe use apikey instead of token
+    client = db.query(models.Client).all()
+    if client is None:
+        raise HTTPException(status_code=404, detail='client not found')
+    return client
 
 
 
