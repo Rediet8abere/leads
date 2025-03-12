@@ -24,6 +24,7 @@ To run the application locally on your machine, follow the steps below:
 
   ```bash
   # Create a virtual environment (optional)
+
   python -m venv venv
   # Activate the virtual environment
   # For Windows
@@ -40,4 +41,10 @@ To run the application locally on your machine, follow the steps below:
    ```
   <img width="1437" alt="Screenshot 2025-03-12 at 11 53 28 AM" src="https://github.com/user-attachments/assets/89082537-d07c-4cf1-aaae-aea0ad961bae" />
  6. **Note: API Limitation**
+
+## Features 
+  ### CRU(D - no delete fun) operation for prospective clients 
+  ### Create operation for attorney 
+  ### Email Notification for prospect clients and attorneys 
+   <img width="656" alt="Screenshot 2025-03-12 at 11 58 01 AM" src="https://github.com/user-attachments/assets/39510064-25ed-457d-bb02-2e948179db4d" />
    
