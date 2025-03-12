@@ -123,6 +123,8 @@ def get_db():
     finally:
         db.close()
 
+db_dependency = Annotated[Session, Depends(get_db)]
+
 # TODO: internal api for create, get attorney
 # TODO: Fix token expire limitation by refreshing token
 
