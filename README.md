@@ -39,6 +39,13 @@ To run the application locally on your machine, follow the steps below:
  4. **To access fast api swagger go to**:
    ```bash http://127.0.0.1:8000/docs
    ```
+   Fetch all Clients API requires a secret key to run the application. The secret key can be obtained from the Author.
+   
+   <img width="1415" alt="Screenshot 2025-03-13 at 12 59 08 PM" src="https://github.com/user-attachments/assets/641125a4-83f1-4716-885a-e05355c2a699" />
+
+   
+   
+   
   <img width="1437" alt="Screenshot 2025-03-12 at 11 53 28 AM" src="https://github.com/user-attachments/assets/89082537-d07c-4cf1-aaae-aea0ad961bae" />
  6. **Note: API Limitation**
 
