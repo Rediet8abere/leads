@@ -47,7 +47,6 @@ To run the application locally on your machine, follow the steps below:
    
    
   <img width="1437" alt="Screenshot 2025-03-12 at 11 53 28 AM" src="https://github.com/user-attachments/assets/89082537-d07c-4cf1-aaae-aea0ad961bae" />
- 6. **Note: API Limitation**
 
 ## Design Document 
    [Tech Spec](https://docs.google.com/document/d/1wiy8QHlNwsQVWUJy8v7UhPlPr-pxdRsS7Xq_xe9g-q0/edit?tab=t.0#heading=h.e1d7h350587m)
